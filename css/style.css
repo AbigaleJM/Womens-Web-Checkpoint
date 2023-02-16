@@ -1,0 +1,151 @@
+
+body {
+    background-color: #EAE0DA;
+    color: #50577A;
+    font-size: 12pt;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10pt
+}
+h1 {
+    font-size: 30pt;
+    font-weight: bold;
+    color: #0A2647;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #144272
+}
+p {
+    margin: 20pt
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+img {
+    width: 90%;
+    padding: 20px;
+    margin: 15px 20px 20px 15px;
+}
+
+
+
+footer {
+    border: #0A2647;
+    border-style: dotted;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0A2647;
+    font-size: 15pt;
+
+  }
+  
+ul li {
+    display: inline-block;
+  }
+
+.active {
+  background-color: #144272;
+  text-decoration: underline;
+}
+
+.skip {
+  position: absolute;
+  left: -1000px
+}
+
+  
+li a {
+    display: block;
+    color: #F7F5EB;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #144272;
+    text-decoration: underline;
+  }
+
+/* Literature Page */
+.femlit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin: auto;
+
+}
+
+.femlit div {
+  padding: 20px;
+  border: solid #0A2647 5px;
+  background-color: aliceblue;
+}
+
+.lit-image {
+  width: 70%;
+  border-radius: 20pt;
+}
+
+/* History & Politics Page */
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.history img {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  width: 75%;
+}
+
+.history p {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  font-size: 18pt;
+}
+
+/* Dictionary Page */
+
+/* .femdict {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.femdict dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-flow: row wrap;
+  border: solid #333;
+  border-width: 1px 1px 0 0;
+
+}
+
+.femdict dt {
+  padding: 2px 4px;
+  background: #333;
+  color: #fff;
+}
+
+.femdict dd {
+  margin: 0;
+  padding: 4px;
+  min-height: 3em;
+}
+
