@@ -41,7 +41,7 @@ img {
 footer {
     border: #0A2647;
     border-style: solid;
-    margin: 5px;
+    margin: 25px;
     background-color: #F7F5EB;
 }
 
@@ -215,6 +215,9 @@ li a:hover {
 
 /* Dictionary Page */
 
+.femdict_body {
+  background-image: url("../images/dict_pink_wallpaper.jpg");
+}
 .femdict dl {
   display: flex;
   background-color: #F7F5EB;
