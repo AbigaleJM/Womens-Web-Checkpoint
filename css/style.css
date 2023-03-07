@@ -165,8 +165,9 @@ li a:hover {
   column-gap: 40px;
   row-gap: 40px;
   margin: auto;
-
+  background-image: url("../images/lit_blue_wallpaper.jpg");
 }
+
 
 .femlit div {
   padding: 20px;
