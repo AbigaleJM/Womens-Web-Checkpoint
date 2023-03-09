@@ -54,6 +54,9 @@ nav ul {
     background-color: #0A2647;
     font-size: 18pt;
     font-family: Geneva, Tahoma, sans-serif;
+    display: flex; 
+    flex-direction: column;
+
   }
   
 ul li {
@@ -119,10 +122,8 @@ li a:hover {
 }
 
 
-
 .index_div {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr;
+  display: block;
   border: solid 5px #0A2647;
   align-items: start;
   background-color: #F7F5EB;
@@ -130,7 +131,7 @@ li a:hover {
 }
 
 .index_div h2 {
-  margin: auto;
+  margin: 10px;
   padding: 7px;
   text-decoration: underline;
   font-size: 26pt;
@@ -198,13 +199,12 @@ li a:hover {
 
 /* History & Politics Page */
 
-.history {
+.history div {
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .history img {
-  padding: 20px;
   border-radius: 60px;
   border: solid #0A2647 5px;
 }
@@ -218,6 +218,11 @@ li a:hover {
 .femdict_body {
   background-image: url("../images/dict_pink_wallpaper.jpg");
 }
+
+.femdict div {
+  width: 100%;
+}
+
 .femdict dl {
   display: flex;
   background-color: #F7F5EB;
@@ -253,23 +258,44 @@ li a:hover {
 
 /* Media Query */
 @media screen and (min-width: 900px) {
+  /* General stuff */
+  nav ul {
+    display: block;
+  }
   /* Index */
   .index_div {
     grid-template-columns: 1fr 1fr 1fr;
+    display: inline-grid;
+    border: solid 5px #0A2647;
+    align-items: start;
+    background-color: #F7F5EB;
   }
   /* Literature */
   .femlit {
     grid-template-columns: 1fr 1fr;
   }
   /* History and Politics */
-  .history {
+  .history div {
     grid-template-columns: 1fr 1fr;
+    margin: 20px 0px;
+    border: solid #0A2647 5px;
+    border-radius: 60px;
+    background-image: url("../images/ltBlue_hist_background.jpg");
   }
+
   .history img {
-    grid-column: 1 / 2;
+    border-radius: 60px;
+    border: solid #0A2647 5px;
+    grid-row: 1 / 4;
+  }
+
+  .history h2 {
+    margin: auto;
+    font-size: 30pt
   }
   .history div p {
     grid-column: 2 / 3;
+    align-self: center;
   }
   /* Fem Dictionary */
 
