@@ -6,6 +6,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 15pt
 }
+
 h1 {
     font-size: 30pt;
     font-family: "Gloock", Verdana, Geneva;
@@ -113,6 +114,8 @@ li a:hover {
   color: #F7F5EB;
   font-size: 38pt;
   letter-spacing: 4px;
+  animation-duration: 4s;
+  animation-name: grow;
 }
 
 #intro_txt {
@@ -289,7 +292,14 @@ li a:hover {
 
 
 /* animation code */
-
+@keyframes grow {
+  from {
+    font-size: 38pt;
+  }
+  to {
+    font-size: 48pt;
+  }
+}
 
 /* Media Query */
 @media screen and (min-width: 900px) {
