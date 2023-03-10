@@ -300,6 +300,11 @@ li a:hover {
     font-size: 48pt;
   }
 }
+@media (prefers-reduced-motion) {
+  .hero-text h1 {
+    animation-play-state: paused;
+  }
+}
 
 /* Media Query */
 @media screen and (min-width: 900px) {
