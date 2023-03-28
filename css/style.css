@@ -68,7 +68,7 @@ nav ul {
     background-color: #0A2647;
     font-size: 18pt;
     font-family: Geneva, Tahoma, sans-serif;
-    display: flex; 
+    display: flex;
     flex-direction: column;
   }
 
@@ -79,6 +79,7 @@ ul li {
 .active {
   background-color: #144272;
   text-decoration: underline;
+  text-decoration-color: #F7F5EB;
 }
 
 .skip {
@@ -318,6 +319,10 @@ li a:hover {
   font-size: 36pt;
 }
 
+#intro_p {
+  text-align: center;
+}
+
 .femdict_body {
   background-image: url("../images/dict_pink_wallpaper.jpg");
 }
@@ -332,7 +337,6 @@ li a:hover {
   flex-flow: row wrap;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .femdict dt {
@@ -581,8 +585,17 @@ li a:hover {
     border-radius: 60px;
     border: solid #0A2647 5px;
     grid-row: 1 / 4;
-    align-self: center;
+    justify-self: center;
     min-width: 700px;
+    -webkit-filter: grayscale(100%);
+	  filter: grayscale(100%);
+	  -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+  }
+
+  .history img:hover {
+    -webkit-filter: grayscale(0);
+	  filter: grayscale(0);
   }
 
   .history h2 {
