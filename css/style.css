@@ -144,7 +144,6 @@ li a:hover {
   line-height: 2;
 }
 
-
 .index_div {
   display: grid;
   grid-template-columns: 1fr;
@@ -158,7 +157,6 @@ li a:hover {
   padding: 7px;
   text-decoration: underline;
   font-size: 26pt;
-  justify-self: right;
 }
 
 .index_div #lit_h2 {
