@@ -605,6 +605,7 @@ li a:hover {
     border: solid #0A2647 5px;
     grid-row: 1 / 4;
     justify-self: center;
+    align-self: start;
     min-width: 700px;
     -webkit-filter: grayscale(100%);
 	  filter: grayscale(100%);
